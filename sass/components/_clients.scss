@@ -1,26 +1,21 @@
 .clients {
   display: flex;
-  @media screen and (max-width:1199px){
-    flex-wrap: wrap;
-  margin: -15px;
-  }
+   margin: -15px;
+  @media screen  and (max-width:1199px){
+     flex-wrap: wrap;
   
+  }
+
 }
 .clients__item {
-
   width: calc((100% - 60px) / 2);
   height: 92px;
- 
-   @media screen and (min-width: $tablet) and (max-width:1199){
-     width: calc((100% - 90px) / 3);
-      margin: 15px;
-   }
-  @media screen and (min-width: $desktop) {
-    width: calc((100% - 150px) / 6);
+  margin: 15px;
 
-      
-    
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 90px) / 3);
   }
+  
 }
 
 .clients__link {

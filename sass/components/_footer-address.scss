@@ -1,6 +1,9 @@
 address {
   margin-top: 20px;
-  text-align: center;
+ 
+}
+.footer__address{
+ text-align: center;
 }
 .address__link {
   font-style: normal;
@@ -17,7 +20,7 @@ address {
   margin-bottom: 9px;
 }
 .address__link--ofice {
-  color: $address;
+  color: $white-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
