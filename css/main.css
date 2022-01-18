@@ -631,7 +631,7 @@ img {
   background-color: #f5f4fa;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -648,7 +648,9 @@ img {
 
 @media screen and (min-width: 1200px) {
   .team {
-    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .team__item:not(:last-child) {
     margin-right: 30px;
@@ -734,23 +736,31 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: -15px;
+}
+
+@media screen and (max-width: 1199px) {
+  .clients {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .clients__item {
   width: calc((100% - 60px) / 2);
   height: 92px;
-  margin: 15px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199) {
+  .clients__item {
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .clients__item {
-    width: 170px;
-  }
-  .clients__item:not(:last-child) {
-    margin-right: 30px;
+    width: calc((100% - 150px) / 6);
   }
 }
 
@@ -783,8 +793,22 @@ img {
   padding: 60px 0;
 }
 
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 address {
   margin-top: 20px;
+  text-align: center;
 }
 
 .address__link {
@@ -813,6 +837,11 @@ address {
   color: #2196f3;
 }
 
+.follow {
+  margin-top: 60px;
+  text-align: center;
+}
+
 .follow__title {
   display: block;
   font-weight: 700;
@@ -829,6 +858,21 @@ address {
   fill: white;
 }
 
+.mailing {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.mailing__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .mailing__title {
   display: block;
   font-weight: 700;
@@ -841,6 +885,8 @@ address {
 }
 
 .mailing__button {
+  display: block;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -873,7 +919,7 @@ address {
 
 .mailing__input {
   background-color: inherit;
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;

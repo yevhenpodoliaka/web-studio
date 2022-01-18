@@ -2,7 +2,7 @@
   background-color: $bgc-team-section;
 }
 .team {
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width:1199px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -13,7 +13,8 @@
   }
 
   @media screen and (min-width: $desktop) {
-    margin-top: 50px;
+    display: flex;
+  
     &__item:not(:last-child) {
       margin-right: 30px;
     }

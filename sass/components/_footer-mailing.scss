@@ -1,9 +1,13 @@
-// .mailing {
-//   margin-left: auto;
-// }
-// .mailing__form {
-//   // display: flex;
-// }
+.mailing {
+  margin-top: 60px;
+  text-align: center;
+  // margin-left: auto;
+}
+.mailing__form {
+
+  display: flex;
+  flex-direction: column;
+}
 
 .mailing__title {
   display: block;
@@ -17,6 +21,8 @@
 }
 
 .mailing__button {
+  display: block;
+ margin-top: 20px;
   display: flex;
   align-items: center;
 
@@ -48,7 +54,8 @@
 
 .mailing__input {
   background-color: inherit;
-  width: 358px;
+ width: 450px;
+  // width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
