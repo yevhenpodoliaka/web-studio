@@ -2,11 +2,21 @@
   background-color: $bgc-team-section;
 }
 .team {
-  display: flex;
-  margin-top: 50px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    &__item {
+      width: calc((100% - 60px) / 2);
+      margin: 15px;
+    }
+  }
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: $desktop) {
+    margin-top: 50px;
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 .team__item {
@@ -31,10 +41,9 @@
 
 .team__description {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   text-align: center;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 30px;
+  }
 }
-
-
-
-

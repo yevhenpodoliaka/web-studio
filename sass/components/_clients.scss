@@ -1,13 +1,22 @@
 .clients {
   display: flex;
-  margin-top: 50px;
+  flex-wrap: wrap;
+  margin:-15px
+ 
+ 
 }
 .clients__item {
-  width: 170px;
+  width: calc((100% - 60px) / 2);
   height: 92px;
+  margin: 15px;
+   @media screen and (min-width: $desktop){
+    width: 170px;
+  
   &:not(:last-child) {
     margin-right: 30px;
   }
+   }
+  
 }
 
 .clients__link {
