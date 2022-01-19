@@ -1,4 +1,5 @@
 .contact {
+  
   @media screen and (max-width: 767px) {
     margin-top: 302px;
 
@@ -8,7 +9,7 @@
   }
   @media screen and(min-width:$desktop) {
     display: flex;
-    margin-left: auto;
+   
 
     &__item:not(:last-child) {
       margin-right: 50px;
