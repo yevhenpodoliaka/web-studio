@@ -796,12 +796,50 @@ img {
   padding: 60px 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__grup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__grup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 address {
   margin-top: 20px;
 }
 
 .footer__address {
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    text-align: start;
+  }
 }
 
 .address__link {
@@ -831,8 +869,21 @@ address {
 }
 
 .follow {
-  margin-top: 60px;
   text-align: center;
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .follow {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .follow {
+    margin-left: 70px;
+    text-align: start;
+  }
 }
 
 .follow__title {
@@ -851,9 +902,25 @@ address {
   fill: white;
 }
 
-.mailing {
-  margin-top: 60px;
-  text-align: center;
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .mailing {
+    margin-top: 60px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .mailing__title {
@@ -892,6 +959,13 @@ address {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .mailing__button {
+    margin-top: 0;
+    margin-left: 12px;
+  }
+}
+
 .mailing__button:hover, .mailing__button:focus {
   background-color: #188ce8;
 }
@@ -903,11 +977,17 @@ address {
 
 .mailing__input {
   background-color: inherit;
-  width: 100%;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding: 15px 16px;
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing__input {
+    width: 358px;
+  }
 }
 
 .portfolio-menu {

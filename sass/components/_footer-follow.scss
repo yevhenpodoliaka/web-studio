@@ -1,8 +1,17 @@
 .follow {
-  margin-top: 60px;
-  text-align: center;
-  // margin-left: 70px;
+   text-align: center;
+    margin-top: 60px;
+  @media screen and (min-width: $tablet){
+    margin-top: 0;
+  }
+  @media screen and (min-width: $desktop){
+    margin-left: 70px;
+    text-align: start;
+  }
+ 
+  
 }
+
 .follow__title {
   display: block;
   font-weight: 700;
@@ -18,8 +27,6 @@
 .social__link--footer {
   background-color: $bgc-footer-icon;
   fill: white;
-
- 
 }
 
 

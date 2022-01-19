@@ -2,9 +2,28 @@
   background-color: $bgc-footer;
   padding: 60px 0;
 
-  // &__container {
-  //   display: flex;
-   
-  //   align-items: baseline;
-  // }
+  &__container {
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      
+    }
+
+    
+  }
 }
+
+.footer__grup {
+   
+   
+  @media screen and (min-width: $tablet) and (max-width:1199px) {
+   display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+@media screen and (min-width: $desktop){
+  display: flex;
+}
+
+ } 

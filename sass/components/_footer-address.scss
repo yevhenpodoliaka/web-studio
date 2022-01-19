@@ -1,9 +1,11 @@
 address {
   margin-top: 20px;
- 
 }
-.footer__address{
- text-align: center;
+.footer__address {
+  text-align: center;
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+  }
 }
 .address__link {
   font-style: normal;
