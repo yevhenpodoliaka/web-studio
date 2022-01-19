@@ -2,6 +2,9 @@
   background-color: $bgc-team-section;
 }
 .team {
+  img{
+    width: 100%;
+  }
   &__item:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;

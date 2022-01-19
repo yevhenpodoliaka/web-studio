@@ -1,19 +1,16 @@
 .header {
+  border-bottom: 1px solid #ececec;
   @media screen and(max-width:767px) {
     position: relative;
-    padding: 16px 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+   
   }
 
-  @media screen and (min-width: $tablet) {
-    border-bottom: 1px solid #ececec;
-
-    &__container {
+  &__container {
+    @media screen and (min-width: $tablet) {
       display: flex;
       align-items: center;
     }
   }
 }
-
-
-
-

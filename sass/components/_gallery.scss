@@ -1,13 +1,24 @@
 .gallery {
+  img{
+    width: 100%;
+  }
+  @media screen and(max-width:767px){
+    &__item:not(:last-child){
+      margin-bottom: 30px;
+    }
+  }
+   
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    // margin: -15px;
+    margin: -15px;
+   
      
   }
 
   &__item {
     background-color: $white-color;
+
     @media screen and (min-width: $tablet) and (max-width:1199px) {
       width: calc((100% - 60px) / 2);
       margin: 15px;
