@@ -3,6 +3,8 @@
 @import "./base/variables";
 @import"./components/mix";
 @import "./components/header";
+@import"./components/header-nav";
+@import"./components/header-contact";
 @import"./components/logo";
 @import"./components/hero";
 @import"./components/features";
@@ -18,3 +20,4 @@
 @import"./components/gallery";
 @import "./components/modal";
 @import "./components/form-modal";
+@import"./components/mobile-menu";

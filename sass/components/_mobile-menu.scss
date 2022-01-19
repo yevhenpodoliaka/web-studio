@@ -1,0 +1,46 @@
+.menu {
+  background-color: $white-color;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 48px 10px 48px 40px;
+    display: none;
+    &.is-open {
+      display: block;
+      position: fixed;
+    }
+  }
+  @media screen and(min-width:$tablet){
+      display: flex;
+      align-items: center;
+  }
+}
+
+.menu__button {
+  position: absolute;
+  z-index: 9;
+  top: 10px;
+  right: 15px;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  .button__close {
+    display: none;
+  }
+
+   @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.menu__button.is-open .button__close {
+  display: block;
+  
+}
+.menu__button.is-open .button__open {
+  display: none;
+}
