@@ -359,34 +359,39 @@ img {
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
-.nav {
-  margin-left: 93px;
-}
-
-.nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.nav__item:not(last-child) {
-  margin-right: 50px;
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
 }
 
 .nav__link {
-  position: relative;
-  display: block;
-  padding: 32px 0;
   text-decoration: none;
   color: #212121;
   font-weight: 500;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .nav__link {
+    font-size: 40px;
+    line-height: 1.18;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .nav__link:hover, .nav__link:focus {
@@ -397,52 +402,23 @@ img {
   color: #2196f3;
 }
 
-.nav__link--current::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #2196f3;
-}
-
-.contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-}
-
-.contact__item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .contact__icon {
-  fill: currentColor;
-  margin-right: 10px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact__icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
 }
 
 .contact__link {
   color: #757575;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact__link:hover, .contact__link:focus {
-  color: #2196f3;
 }
 
 .logo {
@@ -977,7 +953,8 @@ address {
 
 .mailing__input {
   background-color: inherit;
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
