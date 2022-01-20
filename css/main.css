@@ -473,9 +473,6 @@ img {
   .contact__item:not(:last-child) {
     margin-bottom: 10px;
   }
-}
-
-@media screen and (min-width: 768px) {
   .contact__icon {
     fill: currentColor;
     margin-right: 8px;
@@ -505,14 +502,23 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.contact__link:hover, .contact__link:focus {
+  color: #2196f3;
+}
+
 @media screen and (max-width: 767px) {
-  .contact__link:first-child {
-    font-size: 24px;
-    line-height: 1.17;
-  }
-  .contact__link:last-child {
+  .contact__link--tel {
+    font-weight: 500;
     font-size: 34px;
     line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+  .contact__link--post {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -536,8 +542,31 @@ img {
   }
 }
 
-.contact__link:hover, .contact__link:focus {
+.menu-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 64px;
+}
+
+.menu-social__item:not(:last-child) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-social {
+    display: none;
+  }
 }
 
 .logo {
@@ -1285,6 +1314,10 @@ address {
   position: relative;
   border-radius: 4px;
   background-color: white;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
   -webkit-transition: visibility 2500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: visibility 2500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 2500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1295,16 +1328,6 @@ address {
   .modal {
     width: 450px;
     height: 609px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .modal {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
   }
 }
 
@@ -1520,6 +1543,7 @@ address {
 @media screen and (max-width: 767px) {
   .menu {
     position: absolute;
+    z-index: 8;
     top: 0;
     left: 0;
     -webkit-box-flex: 1;
@@ -1531,6 +1555,7 @@ address {
   .menu.is-open {
     display: block;
     position: fixed;
+    width: 100%;
   }
 }
 

@@ -1,7 +1,9 @@
 .menu {
+   
   background-color: $white-color;
   @media screen and (max-width: 767px) {
     position: absolute;
+    z-index: 8;
     top:0;
     left: 0;
     flex-grow: 1;
@@ -10,6 +12,7 @@
     &.is-open {
       display: block;
       position: fixed;
+      width: 100%;
     }
   }
   @media screen and(min-width:$tablet){
@@ -40,6 +43,7 @@
 
 .menu__button.is-open .button__close {
   display: block;
+  
   
 }
 .menu__button.is-open .button__open {

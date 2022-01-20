@@ -15,20 +15,41 @@
   </head>
   <body>
     <!-------------- Header ------------------->
-    <header class="header"><header class="header">
+    <header class="header">
       <div class="container header__container">
-        <a class="logo header__logo" href="./index.html">Web<span class="logo__dark">Studio</span></a>
-        <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu" data-menu-button>
-          <svg class="button__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="button__open" href="./img/sprite.svg#icon-menu_40px"></use>
-            <use class="button__close" href="./img/sprite.svg#icon-close_40px"></use>
+        <a class="logo header__logo" href="./index.html"
+          >Web<span class="logo__dark">Studio</span></a
+        >
+        <button
+          class="menu__button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu"
+          data-menu-button
+        >
+          <svg
+            class="button__icon"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="button__open"
+              href="./img/sprite.svg#icon-menu_40px"
+            ></use>
+            <use
+              class="button__close"
+              href="./img/sprite.svg#icon-close_40px"
+            ></use>
           </svg>
         </button>
         <div class="menu" id="menu" data-menu>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link " href="./index.html">Студия</a>
+                <a class="nav__link " href="./index.html"
+                  >Студия</a
+                >
               </li>
               <li class="nav__item">
                 <a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a>
@@ -40,18 +61,40 @@
           </nav>
           <ul class="contact header__contact">
             <li class="contact__item">
-              <a class="contact__link" href="mailto:info@devstudio.com">
+              <a
+                class="contact__link contact__link--post"
+                href="mailto:info@devstudio.com"
+              >
                 <svg class="contact__icon" width="16px" height="12px">
                   <use href="img/sprite.svg#icon-post"></use>
                 </svg>
-                info@devstudio.com</a>
+                info@devstudio.com</a
+              >
             </li>
             <li class="contact__item">
-              <a class="contact__link" href="tel:+380961111111">
+              <a
+                class="contact__link contact__link--tel"
+                href="tel:+380961111111"
+              >
                 <svg class="contact__icon" width="10px" height="16px">
                   <use href="img/sprite.svg#icon-tel"></use>
                 </svg>
-                +38 096 111 11 11</a>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="menu-social">
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">Instagram</a>
+            </li>
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">Twitter</a>
+            </li>
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">Facebook</a>
+            </li>
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">LinkedIn</a>
             </li>
           </ul>
         </div>

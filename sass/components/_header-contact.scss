@@ -1,5 +1,4 @@
 .contact {
-  
   @media screen and (max-width: 767px) {
     margin-top: 302px;
 
@@ -7,25 +6,22 @@
       display: none;
     }
   }
-  @media screen and(min-width:$tablet) and (max-width:1199px){
+  @media screen and(min-width:$tablet) and (max-width: 1199px) {
     margin-left: auto;
-    &__item:not(:last-child){
+    &__item:not(:last-child) {
       margin-bottom: 10px;
     }
-  }
-  
 
-  &__icon {
-    @media screen and (min-width: $tablet) {
+    &__icon {
       fill: currentColor;
       margin-right: 8px;
-    
     }
   }
+
   @media screen and(min-width:$desktop) {
     display: flex;
     margin-left: auto;
-    &__icon{
+    &__icon {
       margin-right: 10px;
     }
 
@@ -39,15 +35,25 @@
   color: $primаry-text-color;
   font-weight: 500;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
   @media screen and(max-width:767px) {
-    &:first-child {
-      font-size: 24px;
-      line-height: 1.17;
-    }
-    &:last-child {
+    &--tel {
+      font-weight: 500;
       font-size: 34px;
       line-height: 1.18;
-     
+      letter-spacing: 0.02em;
+      color: $accent-color;
+    }
+    &--post {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
     }
   }
 
@@ -57,14 +63,8 @@
     display: flex;
     align-items: center;
   }
-@media screen and (min-width:$desktop){
-      font-size: 14px;
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
     line-height: 1.14;
-}
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
   }
 }
