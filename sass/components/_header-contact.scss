@@ -67,9 +67,26 @@
     line-height: 1.17;
     display: flex;
     align-items: center;
+    &--post .contact__icon{
+      width: 14px;
+      height:10px ;
+    }
+     &--tel .contact__icon{
+      width: 10px;
+      height: 14px;
+    }
   }
   @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.14;
+
+     &--post .contact__icon{
+      width: 16px;
+      height:12px ;
+    }
+     &--tel .contact__icon{
+      width: 10px;
+      height: 16px;
+    }
   }
 }

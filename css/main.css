@@ -426,6 +426,14 @@ img {
   }
 }
 
+.nav__link:hover, .nav__link:focus {
+  color: #2196f3;
+}
+
+.nav__link--current {
+  color: #2196f3;
+}
+
 @media screen and (min-width: 768px) {
   .nav__link {
     display: block;
@@ -433,14 +441,6 @@ img {
     font-size: 14px;
     line-height: 1.14;
   }
-}
-
-.nav__link:hover, .nav__link:focus {
-  color: #2196f3;
-}
-
-.nav__link--current {
-  color: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
@@ -545,12 +545,28 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
+  .contact__link--post .contact__icon {
+    width: 14px;
+    height: 10px;
+  }
+  .contact__link--tel .contact__icon {
+    width: 10px;
+    height: 14px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .contact__link {
     font-size: 14px;
     line-height: 1.14;
+  }
+  .contact__link--post .contact__icon {
+    width: 16px;
+    height: 12px;
+  }
+  .contact__link--tel .contact__icon {
+    width: 10px;
+    height: 16px;
   }
 }
 
@@ -585,8 +601,8 @@ img {
   color: #2196f3;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
 }
 
 .logo__dark {
@@ -595,6 +611,13 @@ img {
 
 .logo__light {
   color: white;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .hero {
