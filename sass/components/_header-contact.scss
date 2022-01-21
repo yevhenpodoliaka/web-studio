@@ -1,15 +1,19 @@
 .contact {
   @media screen and (max-width: 767px) {
     margin-top: 302px;
-
+    &__item:not(:last-child){
+      margin-bottom: 32px;
+    }
     &__icon {
       display: none;
     }
   }
-  @media screen and(min-width:$tablet) and (max-width: 1199px) {
+  @media screen and(min-width:$tablet) {
+    display: flex;
+    flex-direction: column-reverse;
     margin-left: auto;
     &__item:not(:last-child) {
-      margin-bottom: 10px;
+      margin-top: 10px;
     }
 
     &__icon {
@@ -19,13 +23,14 @@
   }
 
   @media screen and(min-width:$desktop) {
-    display: flex;
+    flex-direction: row;
     margin-left: auto;
     &__icon {
       margin-right: 10px;
     }
 
     &__item:not(:last-child) {
+      margin-top: 0;
       margin-right: 50px;
     }
   }
