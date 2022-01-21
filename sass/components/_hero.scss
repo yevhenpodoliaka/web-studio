@@ -26,7 +26,7 @@
   }
 }
 
-@media screen and (min-width: $tablet) {
+@media screen and (max-width: $tablet) {
   .hero {
     background-image: linear-gradient(
         to right,
@@ -47,7 +47,7 @@
   }
 }
 
-@media screen and (min-width: $desktop) {
+@media screen and (min-width: 769px) {
   .hero {
     padding: 200px 0;
     background-image: linear-gradient(
