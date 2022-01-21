@@ -4,17 +4,13 @@
 
   &__container {
     @media screen and (min-width: $desktop) {
-      display: flex;
-      
+      display: flex;  
     }
-
-    
+  
   }
 }
 
-.footer__grup {
-   
-   
+.footer__grup { 
   @media screen and (min-width: $tablet) and (max-width:1199px) {
    display: flex;
     justify-content: space-between;
