@@ -15,62 +15,91 @@
   </head>
   <body>
     <!-------------- Header ------------------->
-  <header class="header">
-    <div class="container header__container">
-      <a class="logo" href="./index.html">Web<span class="logo__dark">Studio</span></a>
-      <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu" data-menu-button>
-        <svg class="button__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-          <use class="button__open" href="./img/sprite.svg#icon-menu_40px"></use>
-          <use class="button__close" href="./img/sprite.svg#icon-close_40px"></use>
-        </svg>
-      </button>
-      <div class="menu" id="menu" data-menu>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link " href="./index.html">Студия</a>
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo" href="./index.html"
+          >Web<span class="logo__dark">Studio</span></a
+        >
+        <button
+          class="menu__button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu"
+          data-menu-button
+        >
+          <svg
+            class="button__icon"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="button__open"
+              href="./img/sprite.svg#icon-menu_40px"
+            ></use>
+            <use
+              class="button__close"
+              href="./img/sprite.svg#icon-close_40px"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu" id="menu" data-menu>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="./index.html">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link--current" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contact header__contact">
+            <li class="contact__item">
+              <a
+                class="contact__link contact__link--tel"
+                href="tel:+380961111111"
+              >
+                <svg class="contact__icon" width="10px" height="16px">
+                  <use href="img/sprite.svg#icon-tel"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
-            <li class="nav__item">
-              <a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="">Контакты</a>
+            <li class="contact__item">
+              <a
+                class="contact__link contact__link--post"
+                href="mailto:info@devstudio.com"
+              >
+                <svg class="contact__icon" width="16px" height="12px">
+                  <use href="img/sprite.svg#icon-post"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="contact header__contact">
-          <li class="contact__item">
-            <a class="contact__link contact__link--tel" href="tel:+380961111111">
-              <svg class="contact__icon" width="10px" height="16px">
-                <use href="img/sprite.svg#icon-tel"></use>
-              </svg>
-              +38 096 111 11 11</a>
-          </li>
-          <li class="contact__item">
-            <a class="contact__link contact__link--post" href="mailto:info@devstudio.com">
-              <svg class="contact__icon" width="16px" height="12px">
-                <use href="img/sprite.svg#icon-post"></use>
-              </svg>
-              info@devstudio.com</a>
-          </li>
-        </ul>
-        <ul class="menu-social">
-          <li class="menu-social__item">
-            <a href="" class="menu-social__link">Instagram</a>
-          </li>
-          <li class="menu-social__item">
-            <a href="" class="menu-social__link">Twitter</a>
-          </li>
-          <li class="menu-social__item">
-            <a href="" class="menu-social__link">Facebook</a>
-          </li>
-          <li class="menu-social__item">
-            <a href="" class="menu-social__link">LinkedIn</a>
-          </li>
-        </ul>
+          <ul class="menu-social">
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">Instagram</a>
+            </li>
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">Twitter</a>
+            </li>
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">Facebook</a>
+            </li>
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
     <main>
       <!-- ----------------galery----------------- -->
       <section class="section">
@@ -111,8 +140,7 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                   <img
-                   srcset="./img/img-gallery-1.jpg 1x, ./img/img-gallery-1X2.jpg 2x"
-                    src="./img/img-gallery-1.jpg"
+                    src="./img/gallery-1mobile.jpg"
                     alt="ноутбук"
                     width="370"
                     height="294"
@@ -133,8 +161,7 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                   <img
-                    srcset="./img/img-gallery-2.jpg 1x, ./img/img-gallery-2X2.jpg 2x"
-                    src="./img/img-gallery-2.jpg"
+                    src="./img/gallery-2mobile.jpg"
                     alt="постер с баскетболистами"
                     width="370"
                     height="294"
@@ -158,8 +185,7 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                   <img
-                    srcset="./img/img-gallery-3.jpg 1x, ./img/img-gallery-3X2.jpg 2x"
-                    src="./img/img-gallery-3.jpg"
+                    src="./img/gallery-3mobile.jpg"
                     alt="логотип ресторана"
                     width="370"
                     height="294"
@@ -182,8 +208,7 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                   <img
-                    srcset="./img/img-gallery-4.jpg 1x, ./img/img-gallery-4X2.jpg 2x"
-                    src="./img/img-gallery-4.jpg"
+                    src="./img/gallery-4mobile.jpg"
                     alt="наушники"
                     width="370"
                     height="294"
@@ -206,8 +231,7 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                   <img
-                    srcset="./img/img-gallery-5.jpg 1x, ./img/img-gallery-5X2.jpg 2x"
-                    src="./img/img-gallery-5.jpg"
+                    src="./img/gallery-5mobile.jpg"
                     alt="две коробки"
                     width="370"
                     height="294"
@@ -230,8 +254,7 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                   <img
-                    srcset="./img/img-gallery-6.jpg 1x, ./img/img-gallery-6X2.jpg 2x"
-                    src="./img/img-gallery-6.jpg"
+                    src="./img/gallery-6mobile.jpg"
                     alt="монитор"
                     width="370"
                     height="294"
@@ -254,8 +277,7 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                   <img
-                    srcset="./img/img-gallery-7.jpg 1x, ./img/img-gallery-7X2.jpg 2x"
-                    src="./img/img-gallery-7.jpg"
+                    src="./img/gallery-7mobile.jpg"
                     alt="открытый журнал"
                     width="370"
                     height="294"
@@ -278,8 +300,7 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                   <img
-                    srcset="./img/img-gallery-8.jpg 1x, ./img/img-gallery-8X2.jpg 2x"
-                    src="./img/img-gallery-8.jpg"
+                    src="./img/gallery-8mobile.jpg"
                     alt="бирка"
                     width="370"
                     height="294"
@@ -302,8 +323,7 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                   <img
-                    srcset="./img/img-gallery-9.jpg 1x, ./img/img-gallery-9X2.jpg 2x"
-                    src="./img/img-gallery-9.jpg"
+                    src="./img/gallery-9mobile.jpg"
                     alt="человек с ноутбуком"
                     width="370"
                     height="294"
@@ -323,78 +343,92 @@
     </main>
 
     <!-- footer -->
-      <footer class="footer">
-        <div class="container footer__container">
-          <div class="footer__grup">
-            <div class="footer__address">
-              <a class="logo" href="./index.html">Web<span class="logo__light">Studio</span></a>
-              <address>
-                <ul class="address">
-                  <li class="address__item">
-                    <a class="address__link address__link--ofice"
-                      href="https://www.google.com/maps/d/viewer?msa=0&mid=10uSM3H-mIU3GznYo2szRIEphczw&ll=50.42732700000001%2C30.538092&z=17"
-                      target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26
-                    </a>
-                  </li>
-                  <li class="address__item">
-                    <a class="address__link" href="mailto:info@example.com">info@example.com</a>
-                  </li>
-                  <li class="address__item">
-                    <a class="address__link" href="tel:+380991111111">+38 099 111 11 11</a>
-                  </li>
-                </ul>
-              </address>
-            </div>
-            <div class="follow">
-              <b class="follow__title">присоединяйтесь</b>
-              <ul class="social">
-                <li class="social__item">
-                  <a class="social__link social__link--footer" href="">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./img/sprite.svg#icon-instagram"></use>
-                    </svg>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__grup">
+          <div class="footer__address">
+            <a class="logo" href="./index.html"
+              >Web<span class="logo__light">Studio</span></a
+            >
+            <address>
+              <ul class="address">
+                <li class="address__item">
+                  <a
+                    class="address__link address__link--ofice"
+                    href="https://www.google.com/maps/d/viewer?msa=0&mid=10uSM3H-mIU3GznYo2szRIEphczw&ll=50.42732700000001%2C30.538092&z=17"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >г. Киев, пр-т Леси Украинки, 26
                   </a>
                 </li>
-                <li class="social__item">
-                  <a class="social__link social__link--footer" href="">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./img/sprite.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
+                <li class="address__item">
+                  <a class="address__link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
                 </li>
-                <li class="social__item">
-                  <a class="social__link social__link--footer" href="">
-                    <svg class="follow__icon" width="20" height="20">
-                      <use href="./img/sprite.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--footer" href="">
-                    <svg class="socialicon" width="20" height="20">
-                      <use href="./img/sprite.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
+                <li class="address__item">
+                  <a class="address__link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
                 </li>
               </ul>
-            </div>
+            </address>
           </div>
-          <div class="mailing">
-            <b class="mailing__title">Подпишитесь на рассылку</b>
-            <form class="mailing__form">
-              <label>
-                <input class="mailing__input" type="email" name="email" placeholder="E-mail" />
-              </label>
-              <button class="mailing__button" type="submit">
-                Подписаться
-                <svg class="mailing-button-icon" width="24" height="24">
-                  <use href="img/sprite.svg#icon-send"></use>
-                </svg>
-              </button>
-            </form>
+          <div class="follow">
+            <b class="follow__title">присоединяйтесь</b>
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link social__link--footer" href="">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--footer" href="">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--footer" href="">
+                  <svg class="follow__icon" width="20" height="20">
+                    <use href="./img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--footer" href="">
+                  <svg class="socialicon" width="20" height="20">
+                    <use href="./img/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </footer>
+        <div class="mailing">
+          <b class="mailing__title">Подпишитесь на рассылку</b>
+          <form class="mailing__form">
+            <label>
+              <input
+                class="mailing__input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="mailing__button" type="submit">
+              Подписаться
+              <svg class="mailing-button-icon" width="24" height="24">
+                <use href="img/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
