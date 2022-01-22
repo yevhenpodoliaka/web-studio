@@ -173,36 +173,25 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="works">
             <li class="works__item">
-              <img
-                srcset="./img/box1.jpg 1x, ./img/box1X2.jpg 2x"
-                src="./img/box1.jpg"
-                alt="Десктопные приложения"
-                width="370"
-                height="294"
-                class="link"
-              />
+                <picture>
+                  <source srcset="./img/box1.jpg 1x, ./img/box1X2.jpg 2x" />
+                  <img src="./img/box1.jpg" alt="Десктопные приложения" />
+                </picture>
               <h3 class="works__title">Десктопные приложения</h3>
             </li>
             <li class="works__item">
-              <img
-                srcset="./img/box2.jpg 1x, ./img/box2X2.jpg 2x"
-                src="./img/box2.jpg"
-                alt="Мобильные приложения"
-                width="370"
-                height="294"
-                class="link"
-              />
+                <picture>
+                  <source srcset="./img/box2.jpg 1x, ./img/box2X2.jpg 2x" />
+                  <img src="./img/box3.jpg" alt="Мобильные приложения" />
+                </picture>
               <h3 class="works__title">Мобильные приложения</h3>
             </li>
             <li class="works__item">
-              <img
-                srcset="./img/box3.jpg 1x, ./img/box3X2.jpg 2x"
-                src="./img/box3.jpg"
-                alt="Дизайнерские решения"
-                width="370"
-                height="294"
-                class="link"
-              />
+              <picture>
+                <source srcset="./img/box3.jpg 1x, ./img/box3X2.jpg 2x" />
+                <img src="./img/box3.jpg" alt="Дизайнерские решения" />
+              </picture>
+
               <h3 class="works__title">Дизайнерские решения</h3>
             </li>
           </ul>
@@ -215,13 +204,31 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-             
-              <img
-                src="./img/demianenko-mobile.jpg"
-                alt="участник команды Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./img/demianenko.jpg 1x, ./img/demianenko2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/demianenko-tablet.jpg  1x,
+                    ./img/demianenko-tablet2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/demianenko-mobile.jpg  1x,
+                    ./img/demianenko-mobile2.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./img/demianenko-mobile.jpg"
+                  alt="участник команды Игорь Демьяненко"
+                />
+              </picture>
+
               <div class="team__description">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__text">
@@ -260,12 +267,30 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./img/repina-mobile.jpg"
-                alt="участник команды Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./img/repina.jpg 1x, ./img/repina2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/repina-tablet.jpg  1x,
+                    ./img/repina-tablet2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/repina-mobile.jpg  1x,
+                    ./img/repina-mobile2.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./img/demianenko-mobile.jpg"
+                  alt="участник команды Ольга Репина"
+                />
+              </picture>
               <div class="team__description">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__text">
@@ -304,12 +329,30 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./img/tarasov-mobile.jpg"
-                alt="участник команды Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./img/tarasov.jpg 1x, ./img/tarasov2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tarasov-tablet.jpg  1x,
+                    ./img/tarasov-tablet2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/tarasov-mobile.jpg  1x,
+                    ./img/tarasov-mobile2.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./img/demianenko-mobile.jpg"
+                  alt="участник команды Николай Тарасов"
+                />
+              </picture>
               <div class="team__description">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__text"><span lang="en">Marketing</span></p>
@@ -346,12 +389,30 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./img/ermakov-mobile.jpg"
-                alt="участник команды Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./img/ermakov.jpg 1x, ./img/ermakov2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/ermakov-tablet.jpg  1x,
+                    ./img/ermakov-tablet2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/ermakov-mobile.jpg  1x,
+                    ./img/ermakov-mobile2.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./img/demianenko-mobile.jpg"
+                  alt="участник команды Михаил Ермаков"
+                />
+              </picture>
               <div class="team__description">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__text"><span lang="en">UI Designer</span></p>
