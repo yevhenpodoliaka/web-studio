@@ -12,12 +12,10 @@
     &__item:not(:last-child) {
       margin-right: 50px;
     }
-    margin-left: 88px;
+    
    
   }
-  @media screen and (min-width: $desktop) {
-    margin-left: 93px;
-  }
+ 
 }
 
 .nav__link {

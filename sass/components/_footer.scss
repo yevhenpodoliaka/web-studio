@@ -5,21 +5,19 @@
   &__container {
     @media screen and (min-width: $desktop) {
       display: flex;  
+       align-items: baseline;
     }
   
   }
 }
 
 .footer__grup { 
-  @media screen and (min-width: $tablet) and (max-width:1199px) {
+  @media screen and (min-width: $tablet){
    display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
-    padding-left: 76px;
-    padding-right: 89px;
+    
   }
-@media screen and (min-width: $desktop){
-  display: flex;
-}
+
 
  } 

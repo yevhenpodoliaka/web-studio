@@ -1,7 +1,7 @@
 .portfolio-menu {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   &__item:not(:last-child) {
     margin-right: 8px;
   }
@@ -14,7 +14,11 @@
 
   @media screen and (min-width:$tablet){
     justify-content: center;
+    margin-bottom: 30px;
   
+  }
+  @media screen and (min-width:$desktop ){
+    margin-bottom: 50px;
   }
   
 }
