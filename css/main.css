@@ -1361,9 +1361,9 @@ address {
   overflow-y: scroll;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 480px) {
   .backdrop {
-    padding: 15px;
+    padding: 93px 15px;
   }
 }
 
@@ -1379,7 +1379,7 @@ address {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   border-radius: 4px;
   background-color: white;
   left: 50%;
