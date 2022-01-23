@@ -624,8 +624,8 @@ img {
   padding: 118px 0;
   background-color: #2f303a;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero-mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-mobile.jpg);
   background-size: cover;
 }
 
@@ -638,8 +638,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero-tablet.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-tablet.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero-tablet1X.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-tablet1X.jpg);
   }
 }
 
@@ -1361,9 +1361,9 @@ address {
   overflow-y: scroll;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1199px) {
   .backdrop {
-    padding: 93px 15px;
+    padding: 15px;
   }
 }
 
@@ -1379,7 +1379,7 @@ address {
 }
 
 .modal {
-  position: relative;
+  position: absolute;
   border-radius: 4px;
   background-color: white;
   left: 50%;
