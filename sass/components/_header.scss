@@ -1,13 +1,13 @@
 .header {
   border-bottom: 1px solid #ececec;
-  @media screen and(max-width:767px) {
-    position: relative;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
 
   &__container {
     position: relative;
+    @media screen and(max-width:767px) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
     @media screen and (min-width: $tablet) {
       display: flex;
       align-items: center;
