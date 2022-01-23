@@ -1,11 +1,11 @@
 .menu {
-   
+  z-index: 8;
   background-color: $white-color;
   @media screen and (max-width: 767px) {
     position: relative;
-    top:0;
+    top: 0;
     left: 0;
-    
+
     padding: 48px 10px 48px 40px;
     display: none;
     &.is-open {
@@ -14,13 +14,13 @@
       width: 100%;
     }
   }
-  @media screen and(min-width:$tablet){
-      display: flex;
-      align-items: center;
-      flex-grow: 1;
-      margin-left: 88px;
+  @media screen and(min-width:$tablet) {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 88px;
   }
-   @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     margin-left: 93px;
   }
 }
@@ -35,21 +35,22 @@
   padding: 0;
   border: none;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
   .button__close {
     display: none;
   }
 
-   @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
 
 .menu__button.is-open .button__close {
   display: block;
- 
- 
-  
-  
 }
 .menu__button.is-open .button__open {
   display: none;

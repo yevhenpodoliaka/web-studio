@@ -1,4 +1,5 @@
 .backdrop {
+  z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
@@ -62,5 +63,9 @@
   &:focus,
   &:hover {
     border: 1px solid $accent-color;
+  }
+  &:hover .button__icon,
+  &:focus .button__icon{
+    fill: $btn-hover;
   }
 }

@@ -1348,6 +1348,7 @@ address {
 }
 
 .backdrop {
+  z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
@@ -1431,6 +1432,11 @@ address {
 
 .button__modal:focus, .button__modal:hover {
   border: 1px solid #2196f3;
+}
+
+.button__modal:hover .button__icon,
+.button__modal:focus .button__icon {
+  fill: #188ce8;
 }
 
 .form {
@@ -1604,6 +1610,7 @@ address {
 }
 
 .menu {
+  z-index: 8;
   background-color: white;
 }
 
@@ -1655,6 +1662,10 @@ address {
   padding: 0;
   border: none;
   background-color: transparent;
+}
+
+.menu__button:hover, .menu__button:focus {
+  fill: #2196f3;
 }
 
 .menu__button .button__close {
