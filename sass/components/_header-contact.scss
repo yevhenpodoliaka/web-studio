@@ -1,6 +1,7 @@
 .contact {
   @media screen and (max-width: 767px) {
-    margin-top: 302px;
+    
+    margin-bottom: 64px;
     &__item:not(:last-child){
       margin-bottom: 32px;
     }

@@ -454,7 +454,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .contact {
-    margin-top: 302px;
+    margin-bottom: 64px;
   }
   .contact__item:not(:last-child) {
     margin-bottom: 32px;
@@ -569,7 +569,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 64px;
 }
 
 .menu-social__item:not(:last-child) {
