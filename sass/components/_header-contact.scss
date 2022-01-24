@@ -1,8 +1,7 @@
 .contact {
   @media screen and (max-width: 767px) {
-    
     margin-bottom: 64px;
-    &__item:not(:last-child){
+    &__item:not(:last-child) {
       margin-bottom: 32px;
     }
     &__icon {
@@ -47,19 +46,26 @@
   &:focus {
     color: $accent-color;
   }
-  @media screen and(max-width:767px) {
+  @media screen and (max-width: 479px) {
     &--tel {
-      font-weight: 500;
-      font-size: 34px;
+      font-size: 24px;
       line-height: 1.18;
-      letter-spacing: 0.02em;
       color: $accent-color;
     }
     &--post {
-      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.17;
+    }
+  }
+  @media screen and(min-width:$mobile) and (max-width:76px) {
+    &--tel {
+      font-size: 34px;
+      line-height: 1.18;
+      color: $accent-color;
+    }
+    &--post {
       font-size: 24px;
       line-height: 1.17;
-      letter-spacing: 0.02em;
     }
   }
 
@@ -68,11 +74,11 @@
     line-height: 1.17;
     display: flex;
     align-items: center;
-    &--post .contact__icon{
+    &--post .contact__icon {
       width: 14px;
-      height:10px ;
+      height: 10px;
     }
-     &--tel .contact__icon{
+    &--tel .contact__icon {
       width: 10px;
       height: 14px;
     }
@@ -81,11 +87,11 @@
     font-size: 14px;
     line-height: 1.14;
 
-     &--post .contact__icon{
+    &--post .contact__icon {
       width: 16px;
-      height:12px ;
+      height: 12px;
     }
-     &--tel .contact__icon{
+    &--tel .contact__icon {
       width: 10px;
       height: 16px;
     }

@@ -6,13 +6,18 @@
 }
 .form__title {
   margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
   color: $title-text-color;
   text-align: center;
-  @media screen and (min-width: $desktop) {
+  font-weight: 700;
+  @media screen and (max-width:479px){
+    font-size: 15px;
+  line-height: 1.5;
+  }
+ @media screen and(min-width:$mobile){
+   font-size: 20px;
+  line-height: 1.5;
+}
+   @media screen and (min-width: $desktop) {
     line-height: 1.15;
   }
 }
@@ -49,7 +54,6 @@
 .form__label {
   display: block;
   margin-bottom: 4px;
-
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
