@@ -3,21 +3,11 @@
   padding: 60px 0;
 
   &__container {
-    @media screen and (min-width: $desktop) {
-      display: flex;  
-       align-items: baseline;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: baseline;
     }
-  
   }
 }
-
-.footer__grup { 
-  @media screen and (min-width: $tablet){
-   display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    
-  }
-
-
- } 
