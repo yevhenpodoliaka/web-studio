@@ -1,6 +1,6 @@
 .contact {
   @media screen and (max-width: 767px) {
-    margin-bottom: 64px;
+        margin-bottom: 64px;
     &__item:not(:last-child) {
       margin-bottom: 32px;
     }
@@ -57,7 +57,7 @@
       line-height: 1.17;
     }
   }
-  @media screen and(min-width:$mobile) and (max-width:76px) {
+  @media screen and(min-width:$mobile) and (max-width:767px) {
     &--tel {
       font-size: 34px;
       line-height: 1.18;
