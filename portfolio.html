@@ -24,26 +24,33 @@
           class="menu__button"
           type="button"
           aria-expanded="false"
-          aria-controls="menu"
-          data-menu-button
+          aria-controls="mobile-menu"
         >
           <svg
-            class="button__icon"
+            class="button__open js-open-menu"
             width="40"
             height="40"
             aria-label="Переключатель мобильного меню"
           >
-            <use
-              class="button__open"
-              href="./img/sprite.svg#icon-menu_40px"
-            ></use>
-            <use
-              class="button__close"
-              href="./img/sprite.svg#icon-close_40px"
-            ></use>
+            <use href="./img/sprite.svg#icon-menu_40px"></use>
           </svg>
         </button>
-        <div class="menu" id="menu" data-menu>
+        <div class="menu js-menu-container" id="mobile-menu">
+          <button
+            class="menu__button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="button__close js-close-menu"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use href="./img/sprite.svg#icon-close_40px"></use>
+            </svg>
+          </button>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
