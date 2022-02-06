@@ -1,6 +1,6 @@
 .contact {
   @media screen and (max-width: 767px) {
-        margin-bottom: 64px;
+    margin-bottom: 64px;
     &__item:not(:last-child) {
       margin-bottom: 32px;
     }
@@ -46,26 +46,23 @@
   &:focus {
     color: $accent-color;
   }
-  @media screen and (max-width: 479px) {
-    &--tel {
-      font-size: 24px;
-      line-height: 1.18;
-      color: $accent-color;
-    }
-    &--post {
-      font-size: 14px;
-      line-height: 1.17;
-    }
+
+  &--tel {
+    font-size: 24px;
+    line-height: 1.18;
+    color: $accent-color;
   }
-  @media screen and(min-width:$mobile) and (max-width:767px) {
+  &--post {
+    font-size: 14px;
+    line-height: 1.17;
+  }
+
+  @media screen and(min-width:$mobile) and (max-width: 767px) {
     &--tel {
       font-size: 34px;
-      line-height: 1.18;
-      color: $accent-color;
     }
     &--post {
       font-size: 24px;
-      line-height: 1.17;
     }
   }
 
@@ -74,6 +71,7 @@
     line-height: 1.17;
     display: flex;
     align-items: center;
+    color: inherit;
     &--post .contact__icon {
       width: 14px;
       height: 10px;

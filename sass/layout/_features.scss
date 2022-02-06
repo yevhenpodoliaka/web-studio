@@ -10,16 +10,17 @@
     flex-wrap: wrap;
     margin: -15px;
     &__item {
-      width: calc((100% - 60px) / 2);
+     flex-basis: calc((100% - 60px) / 2);
       margin: 15px;
     }
   }
-  @media screen and (min-width: $desktop) {
-    flex-wrap: nowrap;
-    &__item:not(:last-child) {
-      margin-right: 30px;
+  @media screen and (min-width: $desktop){
+    &__item{
+       flex-basis: calc((100% - 120px) / 4);
     }
+    
   }
+
 }
 .features__title {
   margin-bottom: 10px;
