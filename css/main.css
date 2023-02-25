@@ -639,6 +639,9 @@ img {
   background-color: rgb(47, 48, 58);
 }
 @media screen and (max-width: 767px) {
+  .features {
+    padding: 15px;
+  }
   .features__item:not(:last-child) {
     margin-bottom: 30px;
   }
