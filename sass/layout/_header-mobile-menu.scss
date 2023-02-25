@@ -1,6 +1,6 @@
 .menu {
   z-index: 8;
-  background-color: $white-color;
+ background-color: $dark-color ;
   @media screen and (max-width: 767px) {
       display: none;
     &.is-open {
@@ -15,7 +15,7 @@
       padding: 48px 40px 48px 40px;
     }
   }
-  @media screen and(min-width:$tablet) {
+  @media screen and (min-width:$tablet) {
     display: flex;
     align-items: center;
     flex-grow: 1;
@@ -35,7 +35,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
-
+  fill: $white-color;
   &:hover,
   &:focus {
     fill: $accent-color;

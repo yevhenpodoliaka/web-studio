@@ -37,3 +37,22 @@
     margin-bottom: 50px;
   }
 }
+.button {
+  color: $white-color;
+  background-color: $secondary-color;
+  padding: 10px 32px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: none;
+  transition: background-color,transform,
+  250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    transform: scale(1.02);
+  }
+}
