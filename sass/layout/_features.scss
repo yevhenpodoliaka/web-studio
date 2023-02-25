@@ -1,4 +1,5 @@
 .features {
+background-color:$secondary-dark-color ;
   @media screen and (max-width:767px){
      &__item:not(:last-child){
     margin-bottom: 30px;
@@ -35,10 +36,10 @@
 }
 
 .features__icon-box {
+  background-color: $tertiary-color;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  background-color: $bgc-features;
   height: 120px;
 }

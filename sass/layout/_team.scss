@@ -1,5 +1,5 @@
 .section--bgc {
-  background-color: $bgc-team-section;
+  background-color:$secondary-dark-color;
 }
 .team {
   &__item:not(:last-child) {
@@ -36,7 +36,7 @@
 }
 .team__title {
   margin-bottom: 10px;
-  color: $title-text-color;
+  color: $dark-color;
 
   font-weight: 500;
   font-size: 16px;
@@ -52,6 +52,7 @@
   padding-top: 30px;
   padding-bottom: 24px;
   text-align: center;
+  color: $secondary-color;
   @media screen and (min-width: $desktop) {
     padding-bottom: 30px;
   }

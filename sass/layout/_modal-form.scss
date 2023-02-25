@@ -13,7 +13,7 @@
     font-size: 15px;
   line-height: 1.5;
   }
- @media screen and(min-width:$mobile){
+ @media screen and (min-width:$mobile){
    font-size: 20px;
   line-height: 1.5;
 }
@@ -31,7 +31,7 @@
 .form__input {
   height: 40px;
   padding: 0 0 0 35px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid $tertiary-dark;
   border-radius: 4px;
   outline: none;
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -52,6 +52,7 @@
 }
 
 .form__label {
+  color:$dark-color ;
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
@@ -62,6 +63,9 @@
   width: 100%;
   margin-bottom: 20px;
 }
+.comment__title{
+  color: $dark-color ;
+}
 .comment__input {
   display: block;
   height: 120px;
@@ -69,7 +73,7 @@
   padding: 12px 16px;
   resize: none;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid $tertiary-dark;
   border-radius: 4px;
   outline: none;
 
@@ -84,7 +88,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-
+color: $dark-color;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -119,22 +123,6 @@
   color: $accent-color;
 }
 .form__button {
-  color: $white-color;
-  background-color: $accent-color;
   padding: 10px 55px;
-  border-radius: 4px;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  cursor: pointer;
-  border: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background-color: $btn-hover;
-  }
-  
 }
